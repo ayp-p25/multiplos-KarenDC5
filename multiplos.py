@@ -14,13 +14,18 @@ numero_1 = int(input("Introduzca un número: "))
 numero_2 = int(input("Introduzca otro número: "))
 
 # Proceso
-if numero_2 != 0 and numero_1 % numero_2 == 0:
-    resultado = True 
-else:
-    resultado = False
+if numero_2 != 0:
+    if numero_1 % numero_2 == 0:
+        resultado = True 
+    elif numero_2 % numero_1 == 0: 
+        resultado = True
+    else:
+        resultado = False
+else: 
+    resultado = False 
 
 # Salidas
 if resultado:
-    print("El número", numero_1, "es múltiplo del", numero_2)
+    print("El número", numero_1, "es múltiplo de", numero_2)
 else:
-    print("El número", numero_1, "no es múltiplo del", numero_2)
+    print("Ninguno de los múltiplos es múltiplo del otro")
