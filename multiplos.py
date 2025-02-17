@@ -20,7 +20,7 @@ else:
     resultado = False
 
 # Salidas
-if numero_2 != 0 and numero_1 % numero_2 == 0:
+if resultado:
     print("El número", numero_1, "es múltiplo del", numero_2)
 else:
     print("El número", numero_1, "no es múltiplo del", numero_2)
