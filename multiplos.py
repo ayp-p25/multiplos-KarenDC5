@@ -19,13 +19,15 @@ if numero_2 != 0:
         resultado = True 
     elif numero_2 % numero_1 == 0: 
         resultado = True
-    else:
-        resultado = False
-else: 
-    resultado = False 
+    else: 
+        resultado = False 
+else:
+    resultado = False
 
 # Salidas
 if resultado:
     print("El número", numero_1, "es múltiplo de", numero_2)
+elif resultado: 
+    print("El número", numero_2, "es múltiplo de", numero_1)
 else:
     print("Ninguno de los múltiplos es múltiplo del otro")
